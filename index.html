@@ -8,24 +8,29 @@
         <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
+
+        <!-- Navigation -->
+
         <nav>
             <div class="container">
                 <div class="row">
+                    
                     <div class="logo">
                         <a href="#">Ezra</a>
                     </div>
-                    <div class="links">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#">
-                            <div class="menu" onclick="oc(this)">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                            </div>
-                        </a>
+                    <div class="menu" onclick="oc(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
+                    <div class="overlay" id="myNav">
+                        <div class="links overlay-content">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
