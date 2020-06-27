@@ -153,11 +153,11 @@ header img {
 }
 
 #ban-one {
-    bottom: 140px;
+  top: 378px;
 }
 
 #ban-two {
-    bottom: 140px;
+    top: 403px;
 }
 
 #ban-one {
@@ -171,7 +171,7 @@ header img {
 }
   
 #ban-three {
-    bottom: 60px;
+    top: 480px;
     left: 42%;
     transform: rotate(-20deg);
     width: 14%;
