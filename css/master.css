@@ -1,3 +1,5 @@
+/* Responsiveness */
+
 * {
     box-sizing: border-box;
 }
@@ -18,15 +20,32 @@
     padding: 15px;
 }
 
-body {
-    margin: 0;
+/* General Settings */
+
+html {
     font-family: sans-serif;
+    color: white;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    margin: 15px 0;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
+header, main, footer {
+    text-align: center;
+}
+
+
+
 
 /* Navigation */
 
@@ -64,26 +83,79 @@ nav a {
     position: relative;
 }
   
-  .bar1, .bar2, .bar3 {
+.bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
-  }
+}
   
-  .change .bar1 {
+.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-  }
+}
   
-  .change .bar2 {opacity: 0;}
+.change .bar2 {opacity: 0;}
   
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+.change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+/* Header */
+
+header {
+    background-color: orange;
+    padding: 20% 0 70%;
+}
+
+header img {
+    width: 65%;
+}
+
+/* Main */
+
+main {
+    background-color: olive;
+}
+
+#about, #contact {
+    padding: 25% 10px 60%;
+}
+
+.main-img {
+    width: 30%;
+}
+
+.desc {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 10px;
   }
 
+
+/* Footer */
+
+footer {
+    background-color: firebrick;
+    padding: 1px 0;
+}
+
+footer p {
+    padding: 11px 0;
+}
+
+
   
 
   
@@ -103,12 +175,16 @@ nav a {
 
 
 
-  /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .links a {
+    
+   /* Navigation */
+
+   .links a {
         display: none;
     }
-    /* Overlay */
+
+  /* Overlay */
 
   .overlay {
     height: 0%;
@@ -121,15 +197,20 @@ nav a {
     background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
+    
   }
 
   .change {
     height: 100%;
-}
+  }
+
+  .cl {
+      height: 0;
+  }
 
   .overlay-content {
     position: relative;
-    top: 10%;
+    top: 2%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -176,7 +257,13 @@ nav a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .overlay {
+        display: inline;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
