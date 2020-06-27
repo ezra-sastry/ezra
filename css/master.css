@@ -134,7 +134,7 @@ nav a {
 
 header {
     background-color: orange;
-    padding: 20% 0 70%;
+    padding: 13% 0 80%;
 }
 
 header img {
@@ -153,11 +153,11 @@ header img {
 }
 
 #ban-one {
-    top: 59%;
+    bottom: 160px;
 }
 
 #ban-two {
-    top: 63%;
+    bottom: 196px;
 }
 
 #ban-one {
