@@ -219,6 +219,10 @@ main {
 
 /* Contact Section */
 
+#contact .container {
+    max-width: 700px;
+}
+
 input, textarea {
     width: 100%;
     padding: 12px;
@@ -313,6 +317,14 @@ footer p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .overlay {
+        display: inline;
+    }
+
     nav {
         padding: 10px 0;
     }
@@ -323,12 +335,22 @@ footer p {
         font-weight: normal;
     }
 
+    .logo img, .nav-img {
+        width: 21px;
+        margin: 0 4px -4px 0;
+    }
+
+    .logo img {
+        width: 21px;
+    }
+
     .menu {
         display: none;
     }
 
     nav a {
-        padding: 10px 20px;
+        padding: 10px 6px;
+        padding-right: 14px;
     }
 
     nav a:hover {
@@ -336,22 +358,148 @@ footer p {
     }
 
 
+    /* Header */
+
+    header img {
+        width: 50%;
+    }
+
+    header {
+        padding: 2% 0 80%;
+    }
+
+    #ban-one, #ban-two {
+        width: 15%;
+    }
+
+    #ban-one, #ban-two {
+        top: 523px;
+    }
+
+    #ban-three {
+        width:10%;
+        top: 640px;
+    }
+
+    /* Main */
+
+    #about, #contact {
+        padding: 8% 10px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        line-height: 1.4;
+    }
+
+    h2 {
+        margin: 14px 0;
+        font-size: 2.7rem;
+    }
+
+    h3 {
+        color: blue;
+        font-size: 2.1rem;
+        margin: 42px 0;
+    }
+
+    .desc {
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+
+    /* About Section */
+
+    .main-img {
+        width: 20%;
+    }
+
+    .techs {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figure.col-x-6 img  {
+        width: 80%;
+    }
+
+    figure.col-x-6.tech-mar-one {
+        margin: 0;
+    }
+
+    form {
+        margin-top: 35px;
+    }
+
+    input, textarea {
+        margin-bottom: 20px;
+    }
     
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    html {
-        scroll-behavior: smooth;
+
+    /* Header */
+
+    header {
+        padding: 2% 0 30%;
     }
 
-    .overlay {
-        display: inline;
+    header img {
+        width: 38%;
     }
-}
+
+    #ban-one, #ban-two {
+        top: 472px;
+    }
+
+    #ban-three {
+        width: 7%;
+        top: 500px;
+    }
+
+    /* Main */
+
+    
+
+    .main-img {
+        width: 14%;
+    }
+
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+
+    header img {
+        width: 30%;
+    }
+
+    #ban-one, #ban-two{
+        width: 10%;
+    }
+
+    #ban-three {
+        width: 7%;
+        top: 550px;
+    }
+
+    #ban-one, #ban-two {
+        top: 272px;
+    }
+
+    /* Main */
+
+    .main-img {
+        width: 14%;
+    }
+
+    #about, #contact {
+        padding: 5% 400px 6%;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
